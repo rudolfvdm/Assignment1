@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Login page </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="route.js"></script>
+  </head>
+  <body>
+    <div id="loginpage" >
+      <form id="loginform" >
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="example@mail.com" name="email" id="email" required />
+        <label for="upwd">Password</label>
+        <input type="password" placeholder="******" name="upwd" id="upwd" required />
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me </input>
+        </label>
+      </form>
+    </div>
+    <div id="postResultDiv"></div>
+  </body>
+</html>

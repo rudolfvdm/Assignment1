@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Home Page </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log('ready');
+      $.get("/getData", function(data){
+        $('#message').html(data);
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <h1> Welcome to our chat site! </h1>
+    <div id="message"> <a href="account.html">Login Page</a> </div>
+  </body>
+</html>
